@@ -14,6 +14,5 @@ public class ComparatorsTest {
         }}, new Person() {{
             setName("jack");
         }}));
-
     }
 }
