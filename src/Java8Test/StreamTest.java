@@ -18,7 +18,7 @@ public class StreamTest {
      * parallelStream是多线程的，并行的
      */
     public static void main(String[] args) {
-        List<String> list = new ArrayList<>() {{
+        List<String> list = new ArrayList() {{
             add("a");
             add("c");
             add("b");

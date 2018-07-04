@@ -13,7 +13,7 @@ public class test {
 
     void loadClassTest() throws ClassNotFoundException {
         ClassLoader classLoader = ClassLoader.getSystemClassLoader();
-        ClassLoader.getPlatformClassLoader();
+//        ClassLoader.getPlatformClassLoader();
         Class clazz = classLoader.loadClass("ClassTest.ClassLoaderTest.TestLoadClass");
         Class.forName("ClassTest.ClassLoaderTest.TestLoadClass");
         this.getClass().getClassLoader().loadClass("ClassTest.ClassLoaderTest.TestLoadClass");
