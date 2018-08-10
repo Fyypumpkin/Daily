@@ -11,12 +11,15 @@ import static java.lang.Thread.currentThread;
 
 public class ThreadLocalTest {
     private static ThreadLocal<String> threadLocalValue = new ThreadLocal<>();
+    private static String s;
 
     private static void testThreadLocal() {
         IntStream.range(1, 1000).forEach(i -> {
             Thread t = new Thread(() -> {
-                threadLocalValue.set(String.valueOf(i));
-                System.out.println(threadLocalValue.get());
+//                threadLocalValue.set(String.valueOf(i));
+//                System.out.println(threadLocalValue.get());
+                s = String.valueOf(i);
+                System.out.println(s);
             });
             try {
                 t.start();
